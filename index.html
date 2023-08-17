@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper and Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/rock.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="player">   
+                <h1>Player</h1>
+                <p id="pscore">Score: 0</p>
+            </div>
+            <h1 id="tie">TIE!</h1>
+            <div class="bot">
+                <h1>Bot</h1>
+                <p id="bscore">Score: 0</p>
+            </div>
+        </div>
+
+        <div class="hands">
+            <img id="player" src="img/rock.png" alt="hand">
+            <img id="bot" src="img/rock.png" alt="hand">
+        </div>
+
+        <div class="btns">
+            <button id="rock">ROCK</button>
+            <button id="paper">PAPER</button>
+            <button id="scissor">SCISSOR</button>
+        </div>
+
+    </div>
+
+    <dialog id="d">
+        <div class="dialog-content">
+            <h1 id="gamestatus">YOU WIN!</h1>
+            <button id="playagain">PLAY AGAIN</button>
+        </div>
+    </dialog>
+
+        
+    <footer>
+            <p>Made with <span>❤️</span> by John Florence Batol</p>
+            <div class="socials">
+                <a href="https://www.facebook.com/rence.batol.52/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/renzxs03/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Renzxs"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/john-florence-batol-b990b624b/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px 20px 20px 20px;
+}
+
+@font-face {
+    font-family: InterBlack;
+    src: url(font/Inter-Black.ttf);
+}
+
+@font-face {
+    font-family: InterBold;
+    src: url(font/Inter-Bold.ttf);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    /* border: 3px solid black;
+    border-radius: 20px; */
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-family: InterBlack;
+    text-transform: uppercase;
+}
+
+.header p {
+    font-family: InterBold;
+}
+
+#tie {
+    visibility: hidden;
+    color: rgb(28, 184, 28);
+}
+
+.hands {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.hands img {
+    width: 400px;
+    height: 300px;
+}
+
+#bot {
+    transform: scaleX(-1);
+}
+
+.btns {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btns button {
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-family: InterBlack;
+    color: white;
+    background-color: #170426;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btns button:focus, .btns button:hover{
+    background-color: #0b0113;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    font-family: InterBold;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+footer span {
+    font-family: none;
+}
+
+
+footer p {
+    width: 170px;
+}
+
+footer i {
+    color: black;
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* DIALOG */
+#d {
+    top: 20%;
+    margin: 0 auto;
+    padding: 50px;
+    border: none;
+    background-color: rgba(000, 000, 000, 0.9);
+    color: white;
+    border-radius: 20px;
+}
+
+.dialog-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#gamestatus {
+    font-family: InterBlack;
+    text-align: center;
+    font-size: 80px;
+}
+
+#playagain {
+    padding: 10px;
+    min-width: 50%;
+    max-width: 50%;
+    outline: none;
+    border: none;
+    font-family: InterBlack;
+    color: white;
+    background-color: #170426;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#playagain:focus, #playagain:hover {
+    background-color: #0b0113;
+}
+
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 30px 20px 20px 20px;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    #gamestatus {
+        font-size: 50px;
+    }
+
+    #playagain {
+        max-width: 80%;
+        min-width: 80%;
+    }
+
+    .btns {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hands img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding:20px;
+        gap: 10px;
+        z-index: -1;
+    }
+}
